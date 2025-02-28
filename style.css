@@ -1,0 +1,277 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header {
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  * {
+    box-sizing: border-box;
+}
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    width: 100%;
+    padding: 0;
+    background-color: light;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+    min-width: 1000px;
+    max-width: 2000px;
+  }
+
+  /* Navigation */
+
+ul.hnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0849A3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul.hnav li {
+    float: left;
+  }
+    
+      ul.hnav li a {
+      display: block;
+      color: aliceblue;
+      text-align: center;
+      padding: 2rem 2rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+    
+    ul.hnav li a:hover:not(.active) {
+      background-color: #8ea2f0;
+    }
+    
+    ul.hnav .active {
+      background-color: rgb(7, 0, 0);
+    }
+
+    ul.hnav li a:focus {
+      background-color: #000000;
+      outline: 2px solid white;
+    }
+  
+    ul.hnav, h1 {
+      padding: 0.5em;
+    }
+
+    /* Headings */
+  
+    h1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: "Charm", serif;
+    font-size: 8rem;
+    color: aliceblue;
+    background-color: #0849A3;
+    padding: 2rem;
+    
+  }
+
+  h2 {
+    text-transform: capitalize;
+    font-family: "Ledger", serif;
+    font-size: 2.4rem;
+  }
+
+  h2.mascot {
+    text-align: center;
+    font-family: "Charm", serif;
+    font-size: 2.5rem;
+    color: black;
+  }
+
+  h2.bnw {
+    text-align: center;
+    color: aliceblue;
+    background-color: #0849A3;
+    padding: 4rem;
+
+  }
+
+  h2.beststart {
+    text-align: center;
+    color: aliceblue;
+    background-color: #0849A3;
+    padding: 4rem;
+  }
+
+
+  /* Aside */
+  aside {
+    float: right;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 768px) {
+    aside {
+        float: right;
+        width: 40%;
+    }
+}
+
+  h2.aside {
+    text-align: center;
+    color: aliceblue;
+    background-color: #0849A3;
+    padding: 2rem;
+  }
+
+  p.interest {
+    text-align: center;
+    color: aliceblue;
+    background-color: #0849A3;
+    padding: 40px;
+    font-size: 24px;
+  }
+
+  img.icon{
+    margin: 4rem auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    outline: 2px solid #0849A3;
+}
+
+  a:link { color:royalblue;
+
+  } 
+
+  a:visited { color: rgb(85, 22, 201)
+
+  }
+
+  a:hover, a:focus {
+    color: rgb(213, 0, 224);
+    text-decoration: none;
+    outline: none;
+  }
+
+  a:active {
+    background-color: rgb(255, 189, 189);
+  } 
+
+   ul.courses {
+    list-style: none;
+    float: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  ul.courses li a, ul.courses li a:visited {
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 400px;
+    background-color:#0a50b2;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  
+  
+  ul.courses li a:hover, ul.courses li a:focus {
+    background-color: rgb(0, 0, 0);
+   
+} 
+
+  img.mascot {
+    width: 100%;
+    position: relative;
+    right: 100px;
+    margin: 0 auto;
+  }
+
+
+/* header and footer */
+  header {
+    border-bottom: 0px;
+  }
+  
+
+  img.header {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0; 
+}
+
+
+  footer {
+    text-align: center;
+    background-color: #0849A3;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  img.seal {
+    width: 100px;
+    position: relative;
+    left: 10px;
+    margin: 0 auto;
+    display: block;
+  }
