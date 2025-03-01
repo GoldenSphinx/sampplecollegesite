@@ -1,2 +1,2 @@
-# sample-college-site
+# samplecollegesite
 Sample College Website created for intro to web dev course
